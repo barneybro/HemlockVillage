@@ -22,7 +22,7 @@
 ![Employee Search](images/employeeSearch.png "Responsive Design")  
 
 #### Registration Approval  
-![Registration Approval](images/regApprov.png "Responsive Design")  
+![Registration Approval](images/regAppr.png "Responsive Design")  
 
 #### Sidebar Navigation  
 ![Sidebar Navigation](images/sidebar.png "Responsive Design")  
