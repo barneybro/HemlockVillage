@@ -1,0 +1,81 @@
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\PatientController;
+use App\Http\Controllers\RosterController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DoctorController;
+use App\Http\Middleware\CheckRole;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\SignupController;
+use App\Http\Controllers\LoginController;
+
+require("rapi.php");
+
+// Nav bar routes
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+// Define routes for patients, employees, and rosters
+Route::get('/patients', [PatientController::class, 'index'])->name('patientinfo.index');
+Route::get('/employees', [EmployeeController::class, 'index'])->name('employeeinfo.index');
+Route::get('/roster', [RosterController::class, 'index'])->name('roster.index');
+
+// API routes for fetching patients
+Route::get('/api/patients', [PatientController::class, 'getPatients'])->name('api.patients');
+
+// Public routes (landing, signup, login)
+Route::get('/', fn() => PageController::landing());
+Route::get("/signup", fn() => SignupController::index());
+Route::post("/signup", fn() => SignupController::store(request()));
+Route::get("/login", fn() => LoginController::showLoginForm())->name("login.form");
+Route::post("/login", fn() => LoginController::login(request()));
+Route::get("/logout", fn() => LoginController::logout(request()));
+
+// Users route for specific access levels (Admin and Supervisor)
+Route::middleware([CheckRole::class . ':1,2'])->group(function () {
+    Route::get("/users", fn() => PageController::users());
+});
+
+// Role-specific routes
+Route::middleware(['auth'])->group(function () {
+    Route::get('/admin/home', fn() => view('admin.home'))->name('admin.home');
+    Route::get('/supervisor/home', fn() => view('supervisor.home'))->name('supervisor.home');
+    Route::get('/doctor/home', [DoctorController::class, 'index'])->name('doctorshome.index'); // Doctor home route
+    Route::get('/caregiver/home', fn() => view('caregiver.home'))->name('caregiver.home');
+    Route::get('/family/home', fn() => view('family.home'))->name('family.home');
+});
+
+
+
+// Route to show doctor-specific pages
+Route::middleware(['auth'])->group(function () {
+    // Doctor's homepage
+    Route::get('/doctorshome', [DoctorController::class, 'index'])->name('doctorshome.index');
+});
+
+
+// Additional specific routes for patients, roster, etc.
+Route::post('/patients/{patientId}/approve', [PatientController::class, 'approveRegistration'])->name('patients.approve');
+Route::get('/rosters', [RosterController::class, 'viewRoster'])->name('rosters.view');
+
+// Routes for various views like patient info, employee info, etc.
+Route::get('/patientshome', fn() => view('patientshome'));
+Route::get('/patientinfo', fn() => view('patientinfo'));
+Route::get('/doctorsappointment', fn() => view('doctorsappointment'));
+Route::get('/employeeinfo', fn() => view('employeeinfo'));
+Route::get('/rolecreation', fn() => view('rolecreation'));
+Route::get('/editroles', fn() => view('editroles'));
+Route::get('/searchpatient', fn() => view('searchpatient'));
+Route::get('/registrationapproval', fn() => view('registrationapproval'));
+Route::get('/newroster', fn() => view('newroster'));
+Route::get('/rosters', fn() => view('rosters'));
+Route::get('/editroster', fn() => view('editroster'));
+Route::get('/payments', fn() => view('payments'));
+Route::get('/familyhome', fn() => view('familyhome'));
+Route::get('/adminreport', fn() => view('adminreport'));
+Route::get('/createprescription', fn() => view('createprescription'));
+Route::get('/patientofdoc', fn() => view('patientofdoc'));
+Route::get('/caregivershome', fn() => view('caregivershome'));
+Route::get('/familypayment', fn() => view('familypayment'));
+Route::get('/searchemployee', fn() => view('searchemployee'));

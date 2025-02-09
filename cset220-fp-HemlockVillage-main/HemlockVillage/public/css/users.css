@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:#f7f4ec;
+    color: #481502;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+table {
+    width: 80%;
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: #fff;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #ae370f;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+tr:hover td {
+    background-color: #eaeaea;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 20px 0;
+    list-style: none;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.pagination li {
+    display: inline;
+}
+
+.pagination a,
+.pagination span {
+    padding: 8px 12px;
+    border: 2px solid #ae370f;
+    color: #ae370f;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #d2d2d2;
+}
+
+.current-page {
+    color: white !important;
+    background-color: #ae370f;
+    border: 2px solid #ae370f;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: default;
+}

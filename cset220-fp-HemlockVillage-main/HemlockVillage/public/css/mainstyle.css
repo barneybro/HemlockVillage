@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f7f4ec;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #ae370f;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #481502;
+}
+
+input,
+textarea,
+select,
+button,
+table {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #c0bba6;
+    border-radius: 5px;
+}
+
+textarea
+{
+    resize: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #c0bba6;
+    text-align: left;
+}
+
+th {
+    background-color: #ae370f;
+    color: white;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 10px;
+    background-color: #ae370f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #481502;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    accent-color: #ae370f;
+}

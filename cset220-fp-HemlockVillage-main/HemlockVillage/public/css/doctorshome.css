@@ -1,0 +1,104 @@
+body{
+    background-color:  #f7f4ec;
+}
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fcfcfc;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #481502;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #ae370f;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="date"] {
+    padding: 10px;
+    border: 1px solid #c0bba6;
+    border-radius: 5px;
+    font-size: 14px;
+    background: #fdfdfd;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 20px;
+    background: #ae370f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #481502;
+}
+
+.secondbutton {
+    background: #481502;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.secondbutton:hover {
+    background-color: #ae370f;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th {
+    background-color: #481502;
+    color: white;
+    padding: 12px 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+table td {
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #c0bba6;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+    accent-color: #ae370f;
+}
+
+table tbody tr:hover {
+    background-color: #f5e5da;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

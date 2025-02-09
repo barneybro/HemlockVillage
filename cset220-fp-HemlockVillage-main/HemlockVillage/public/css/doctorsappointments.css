@@ -1,0 +1,96 @@
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f7f4ec;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #481502;
+    margin-bottom: 30px;
+}
+
+h2 {
+    text-align: center;
+    color: #ae370f;
+    margin-top: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #481502;
+    margin-bottom: 8px;
+}
+
+input[type="text"], input[type="date"], select {
+    padding: 10px;
+    border: 1px solid #c0bba6;
+    border-radius: 5px;
+    background: #fdfdfd;
+    font-size: 14px;
+    color: #333;
+}
+
+select {
+    font-size: 14px;
+    color: #333;
+}
+
+button {
+    padding: 12px 20px;
+    background: #ae370f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #481502;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th {
+    background-color: #481502;
+    color: white;
+    padding: 12px 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: none;
+}
+
+table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #c0bba6;
+    font-size: 14px;
+}
+
+.flexbox button {
+    align-self: flex-start;
+}
