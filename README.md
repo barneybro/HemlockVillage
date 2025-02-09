@@ -1,38 +1,66 @@
-# Hemlock Village Website Images  
+# Hemlock Village Website  
 
-## Homepage  
-![Homepage Screenshot](images/home.png "Homepage Design")  
+## Overview  
+Hemlock Village is a web application designed to streamline user management and facilitate role-based access within a healthcare environment. The platform allows users to register, manage appointments, and interact with an organized dashboard.  
 
-## About Page  
-![About Page](images/login.png "About Us Section")  
-
-## Contact Page  
-![Signup Page](images/signup.png "Contact Page")  
-
-## Features  
-
-### User Dashboard  
-![User Dashboard](images/users.png "Dashboard Overview")  
-
-### Mobile Views  
-#### Patient Search  
-![Patient Search](images/patientSearch.png "Responsive Design")  
-
-#### Employee Search  
-![Employee Search](images/employeeSearch.png "Responsive Design")  
-
-#### Registration Approval  
-![Registration Approval](images/regAppr.png "Responsive Design")  
-
-#### Sidebar Navigation  
-![Sidebar Navigation](images/sidebar.png "Responsive Design")  
-
-#### Role Creation  
-![Role Creation](images/roleCreation.png "Responsive Design")  
-
-#### New Roster  
-![New Roster](images/newRoster.png "Responsive Design")  
+### **Technologies Used**  
+- **Backend:** Laravel (PHP Framework)  
+- **Server:** XAMPP  
+- **Database Management:** phpMyAdmin (MySQL)  
+- **Frontend:** HTML, CSS, JavaScript, PHP  
 
 ---
 
-📁 **All images are stored in the `/images` folder within this repository.**
+## Website Images  
+
+### **Homepage**  
+![Homepage Screenshot](images/home.png "Homepage Design")  
+The homepage serves as the entry point to Hemlock Village. It provides an intuitive interface for users to navigate and access essential features.  
+
+### **About Page**  
+![About Page](images/login.png "About Us Section")  
+This page contains information about Hemlock Village, including its purpose and key features. It helps users understand the platform before logging in.  
+
+### **Signup Page**  
+![Signup Page](images/signup.png "Signup Page")  
+The signup page allows new users to create an account. It features role-based registration to ensure proper access control.  
+
+---
+
+## Features  
+
+### **User Dashboard**  
+![User Dashboard](images/users.png "Dashboard Overview")  
+The user dashboard provides an organized view of all available actions, including patient management, scheduling, and system analytics.  
+
+### **Mobile Views**  
+Our platform is fully responsive and accessible across various devices. Below are mobile-friendly views for different functionalities.  
+
+#### **Patient Search**  
+![Patient Search](images/patientSearch.png "Responsive Design")  
+A searchable database where users can find and manage patient records efficiently.  
+
+#### **Employee Search**  
+![Employee Search](images/employeeSearch.png "Responsive Design")  
+Allows administrators to search and manage employee profiles with ease.  
+
+#### **Registration Approval**  
+![Registration Approval](images/regAppr.png "Responsive Design")  
+Admin panel for approving or rejecting new user registrations based on verification.  
+
+#### **Sidebar Navigation**  
+![Sidebar Navigation](images/sidebar.png "Responsive Design")  
+A collapsible sidebar providing quick access to essential sections of the application.  
+
+#### **Role Creation**  
+![Role Creation](images/roleCreation.png "Responsive Design")  
+An admin feature that allows the creation and assignment of user roles with specific permissions.  
+
+#### **New Roster Management**  
+![New Roster](images/newRoster.png "Responsive Design")  
+A scheduling tool for assigning employees to shifts and managing availability.  
+
+---
+
+📁 **All images are stored in the `/images` folder within this repository.**  
+
