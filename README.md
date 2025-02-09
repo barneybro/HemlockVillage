@@ -59,7 +59,3 @@ An admin feature that allows the creation and assignment of user roles with spec
 #### **New Roster Management**  
 ![New Roster](images/newRoster.png "Responsive Design")  
 A scheduling tool for assigning employees to shifts and managing availability.  
-
----
-
-📁 **All images are stored in the `/images` folder within this repository.**  
