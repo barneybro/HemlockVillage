@@ -17,9 +17,9 @@ Hemlock Village is a web application designed as our final project, built to man
 ![Homepage Screenshot](images/home.png "Homepage Design")  
 The homepage serves as the entry point to Hemlock Village. It provides an intuitive interface for users to navigate and access essential features.  
 
-### **About Page**  
-![About Page](images/login.png "About Us Section")  
-This page contains information about Hemlock Village, including its purpose and key features. It helps users understand the platform before logging in.  
+### **Login Page**  
+![Login Page](images/login.png "Login Page")  
+The login page allows registered users to securely access their accounts. Depending on their role (administrator, doctor, nurse, or staff), they will be directed to a personalized dashboard with specific permissions and features.  
 
 ### **Signup Page**  
 ![Signup Page](images/signup.png "Signup Page")  
