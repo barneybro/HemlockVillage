@@ -7,14 +7,30 @@ Hemlock Village Website Images
 ![About Page](images/login.png "About Us Section")
 
 ## Contact Page
-<img src="images/signup" alt="Contact Page" width="600">
+![Signup Oage<img src="images/signup.png" alt="Contact Page" width="600">
 
 ## Features
 ### User Dashboard
-![User Dashboard](images/user.png "Dashboard Overview")
+![User Dashboard](images/users.png "Dashboard Overview")
 
 ### Mobile View
-![Mobile Version](images/mobile.png "Responsive Design")
+![Mobile Version](images/patientSearch.png "Responsive Design")
+
+### Mobile View
+![Mobile Version](images/employeeSearch.png "Responsive Design")
+
+### Mobile View
+![Mobile Version](images/regApprov.png "Responsive Design")
+
+### Mobile View
+![Mobile Version](images/sidebar.png "Responsive Design")
+
+### Mobile View
+![Mobile Version](images/roleCreation.png "Responsive Design")
+
+### Mobile View
+![Mobile Version](images/newRoster.png "Responsive Design")
+
 
 ---
 All images are stored in the `/images` folder within this repository.
