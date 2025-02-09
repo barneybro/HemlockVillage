@@ -1,7 +1,7 @@
 # Hemlock Village Website  
 
 ## Overview  
-Hemlock Village is a web application designed to streamline user management and facilitate role-based access within a healthcare environment. The platform allows users to register, manage appointments, and interact with an organized dashboard.  
+Hemlock Village is a web application designed as our final project, built to manage an assisted living facility. The platform provides role-based access for different healthcare professionals, allowing administrators, doctors, nurses, and staff to log in and access specific features tailored to their roles. Users can register, manage appointments, search for patients or employees, and navigate an organized dashboard to streamline daily operations.  
 
 ### **Technologies Used**  
 - **Backend:** Laravel (PHP Framework)  
@@ -63,4 +63,3 @@ A scheduling tool for assigning employees to shifts and managing availability.
 ---
 
 📁 **All images are stored in the `/images` folder within this repository.**  
-
